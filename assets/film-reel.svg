@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- assets/film-reel.svg - lightweight animated film reel -->
+<!-- assets/film-reel.svg - lightweight animated film reel (fixed: animateTransform placed inside target groups, no xlink) -->
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="240" viewBox="0 0 360 120" aria-hidden="true" role="img">
   <defs>
     <linearGradient id="g" x1="0" x2="1">
@@ -31,8 +31,8 @@
       <circle cx="12" cy="-12" r="4.5" fill="#ffffff" opacity="0.12"/>
       <circle cx="14" cy="10" r="4.5" fill="#ffffff" opacity="0.12"/>
       <circle cx="-8" cy="12" r="4.5" fill="#ffffff" opacity="0.12"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="11s" repeatCount="indefinite"/>
     </g>
-    <animateTransform xlink:href="#reelLeft" attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="11s" repeatCount="indefinite"/>
   </g>
 
   <g transform="translate(260,60)">
@@ -45,8 +45,8 @@
       <circle cx="8" cy="-6" r="3.5" fill="#ffffff" opacity="0.12"/>
       <circle cx="8" cy="6" r="3.5" fill="#ffffff" opacity="0.12"/>
       <circle cx="-9" cy="6" r="3.5" fill="#ffffff" opacity="0.12"/>
+      <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="8s" repeatCount="indefinite"/>
     </g>
-    <animateTransform xlink:href="#reelRight" attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="8s" repeatCount="indefinite"/>
   </g>
 
   <!-- connecting strip -->
