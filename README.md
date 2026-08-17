@@ -5,7 +5,7 @@
 
 <!-- Animated image: reference the committed SVG asset -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/cineflow-web/cineflow-web/6c8c86ebac8e18cd8b601322153422ed2d018801/assets/film-reel.svg" alt="Film reel animation" width="720"/>
+  <img src="https://raw.githubusercontent.com/cineflow-web/cineflow-web/915a8b63b10b9605aa78c965c3889bb856e8383d/assets/film-reel.svg" alt="Film reel animation" width="720"/>
 </p>
 
 # Hi there 👋
