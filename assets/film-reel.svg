@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- assets/film-reel.svg - lightweight animated film reel -->
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="240" viewBox="0 0 360 120" aria-hidden="true" role="img">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#ffb86b"/>
+      <stop offset="1" stop-color="#ff7eb6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- film strip -->
+  <rect x="10" y="20" rx="12" ry="12" width="340" height="80" fill="url(#g)" opacity="0.12"/>
+  <g fill="#111827" opacity="0.85">
+    <!-- sprocket holes -->
+    <g transform="translate(30,30)">
+      <rect x="0" y="0" width="12" height="8" rx="2" ry="2" />
+      <rect x="0" y="16" width="12" height="8" rx="2" ry="2" />
+      <rect x="280" y="0" width="12" height="8" rx="2" ry="2" />
+      <rect x="280" y="16" width="12" height="8" rx="2" ry="2" />
+    </g>
+  </g>
+
+  <!-- rotating film reel group -->
+  <g transform="translate(100,60)">
+    <g id="reelLeft" fill="#0f172a">
+      <circle cx="0" cy="0" r="34" fill="#0f172a" />
+      <circle cx="0" cy="0" r="18" fill="#ffffff" opacity="0.06"/>
+      <circle cx="0" cy="0" r="10" fill="#0f172a"/>
+      <!-- holes -->
+      <circle cx="-14" cy="-10" r="5" fill="#ffffff" opacity="0.12"/>
+      <circle cx="12" cy="-12" r="4.5" fill="#ffffff" opacity="0.12"/>
+      <circle cx="14" cy="10" r="4.5" fill="#ffffff" opacity="0.12"/>
+      <circle cx="-8" cy="12" r="4.5" fill="#ffffff" opacity="0.12"/>
+    </g>
+    <animateTransform xlink:href="#reelLeft" attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="11s" repeatCount="indefinite"/>
+  </g>
+
+  <g transform="translate(260,60)">
+    <g id="reelRight" fill="#0f172a">
+      <circle cx="0" cy="0" r="26" fill="#0f172a" />
+      <circle cx="0" cy="0" r="12" fill="#ffffff" opacity="0.06"/>
+      <circle cx="0" cy="0" r="6" fill="#0f172a"/>
+      <!-- holes -->
+      <circle cx="-9" cy="-6" r="3.5" fill="#ffffff" opacity="0.12"/>
+      <circle cx="8" cy="-6" r="3.5" fill="#ffffff" opacity="0.12"/>
+      <circle cx="8" cy="6" r="3.5" fill="#ffffff" opacity="0.12"/>
+      <circle cx="-9" cy="6" r="3.5" fill="#ffffff" opacity="0.12"/>
+    </g>
+    <animateTransform xlink:href="#reelRight" attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="8s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- connecting strip -->
+  <rect x="132" y="48" width="96" height="24" rx="6" ry="6" fill="#0f172a" opacity="0.9"/>
+  <g fill="#ffffff" opacity="0.85">
+    <rect x="150" y="50" width="14" height="6" rx="1.5"/>
+    <rect x="150" y="64" width="14" height="6" rx="1.5"/>
+    <rect x="196" y="50" width="14" height="6" rx="1.5"/>
+    <rect x="196" y="64" width="14" height="6" rx="1.5"/>
+  </g>
+</svg>
